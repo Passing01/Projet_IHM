@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<?import java.awt.Button?>
+<?import java.awt.TextField?>
+<?import javax.swing.text.html.ListView?>
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.BookController">
+    <TextField fx:id="titleField" promptText="Titre"/>
+    <TextField fx:id="authorField" promptText="Auteur"/>
+    <TextField fx:id="yearField" promptText="Année de publication"/>
+    <Button fx:id="addBookButton" text="Ajouter Livre" onAction="#handleAddBook"/>
+    <TextField fx:id="searchField" promptText="Rechercher"/>
+    <Button fx:id="searchButton" text="Rechercher" onAction="#handleSearchBooks"/>
+
+    <Button fx:id="deleteBookButton" text="Supprimer Livre" onAction="#handleDeleteBook"/>
+</VBox>

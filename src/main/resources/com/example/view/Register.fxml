@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.controller.RegisterController">
+    <TextField fx:id="usernameField" promptText="Nom d'utilisateur"/>
+    <PasswordField fx:id="passwordField" promptText="Mot de passe"/>
+    <TextField fx:id="roleField" promptText="Rôle (bibliothécaire ou étudiant)"/>
+    <Button fx:id="registerButton" text="S'inscrire" onAction="#handleRegister"/>
+</VBox>
